@@ -26,7 +26,7 @@ e.config(width=10)
 def temp_conversion():
     global e
     cel = ((int(e.get()) - 32) * 5/9)
-    conversion_label["text"] = int(cel)
+    conversion_label["text"] = f'{int(cel)}'
 
 
 button = Button(text="Convert", command=temp_conversion)
